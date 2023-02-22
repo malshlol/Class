@@ -3,6 +3,10 @@ public class Main {
     public static void main(String[] args) {
     Author gogol = new Author("Николай", " Гоголь");
     Author dostoevskiy = new Author("Фёдор", " Достоевский");
+    Author dostoevskiy2 = new Author("Фёдор", " Достоевский");
+        System.out.println(gogol);
+        System.out.println(dostoevskiy);
+        System.out.println(dostoevskiy.equals(dostoevskiy2));
 
 
 
@@ -10,10 +14,12 @@ public class Main {
     Book prestyplenieINakazanie = new Book("Преступлений и наказание", 1865, dostoevskiy);
 
 
-    viy.printInfo();
-    prestyplenieINakazanie.printInfo();
+        System.out.println(viy);
+        System.out.println(prestyplenieINakazanie);
 
-viy.setYear(1866);
-        viy.printInfo();
+        viy.setYear(1866);
+        System.out.println(viy);
+        System.out.println(viy.hashCode());
     }
+
 }
